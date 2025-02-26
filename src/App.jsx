@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import axios from "axios";
 import "./App.css";
-import WeatherInformations from "./components/WeatherInformations/WatherInformations";
+import WeatherInformations from "./components/WeatherInformations/WeatherInformations";
 
 function App() {
   const [weather, setWeather] = useState();
@@ -17,7 +17,7 @@ function App() {
   }
 
   return (
-    <div className='cointainer'>
+    <div className='container'>
       <h1>DevClub Previsão do Tempo</h1>
       <input ref={inputRef} type="text" placeholder="Digite o nome da Cidade" />
       <button onClick={searchCity}>Buscar</button>
