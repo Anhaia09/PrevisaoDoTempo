@@ -2,7 +2,6 @@
 import './WeatherInformations.css'
 
 function WeatherInformations({ weather }) {
-  console.log(weather);
 
   return (
     <div className='weather-container'>
@@ -21,7 +20,7 @@ function WeatherInformations({ weather }) {
     <p className='description'>{weather.weather[0].description}</p>
 
     <div className='details'>
-      <p>Sensação Térmic: {Math.round(weather.main.feels_like)} °C</p>
+      <p>Sensação térmica: {Math.round(weather.main.feels_like)} °C</p>
       <p>Umidade: {weather.main.humidity}%</p>
       <p>Pressão: {weather.main.pressure}</p>
     </div>
